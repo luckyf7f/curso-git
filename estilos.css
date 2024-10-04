@@ -1,0 +1,61 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+h1, h3 {
+    text-align: center;
+}
+nav {
+    background-color: #00ff1a; 
+    padding: 15px; 
+    display: flex; 
+    justify-content: center;
+}
+
+nav label {
+    color: rgb(0, 0, 0); 
+    margin: 0 20px; 
+    cursor: pointer; 
+    transition: color 0.3s; 
+}
+
+nav label:hover {
+    color: #ffee00; /* Color al pasar el cursor */
+}
+
+.producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    text-align: center;
+}
+
+.producto img {
+    width: 200px; /* Establecer un ancho fijo */
+    height: 200px; /* Establecer una altura fija */
+    object-fit: cover; /* Mantiene la relación de aspecto y corta la imagen si es necesario */
+}
+button {
+    background-color: #4CAF50; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+    transition: background-color 0.3s, transform 0.2s; /* Transiciones suaves */
+}
+
+button:hover {
+    background-color: #45a049; /* Color al pasar el cursor */
+    transform: scale(1.05); /* Efecto de aumento al pasar el cursor */
+}
+
+button:focus {
+    outline: none; /* Quitar el borde al enfocar */
+}
